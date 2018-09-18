@@ -25,12 +25,16 @@ function getKakArmy(){
 		kakArmies+=1;
 		kps+=50;
 		changeKak(kakArmyPrice*-1);
+	if (kakArmies<40) {
 		kakArmyPrice+=kakArmyPrice/5;
 		kakArmyPrice=Math.round(kakArmyPrice);
+	}
+	else {
+		kakArmyPrice+=294596
 		kps=Math.round(10*kps)/10;
+	}
 		document.getElementById("kps").innerHTML = kps+" kps";
 		document.getElementById("kakArmy").innerHTML = "Get Kak Army ("+kakArmyPrice+" kak) "+kakArmies;
-	}
 	else {
 		confirm("You do not have enough kak. GET MORE KAK");
 	}
