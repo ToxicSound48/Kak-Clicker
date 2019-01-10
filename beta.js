@@ -10,7 +10,7 @@ var kakPriestPrice = 30;
 var kakArmies = 0;
 var kakArmyPrice = 200;
 var kakmorePrice = 2000;
-var kakmore = 0
+var kakmore = 1
 function intro(){
 	
 }
